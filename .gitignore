@@ -4,3 +4,5 @@
 *.json
 *.sw*
 settings.py
+*.pyc
+__pycache__
