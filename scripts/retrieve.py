@@ -12,7 +12,7 @@ def run():
     for req in range(SETTINGS.loop):
 
         location = ",".join(gen_location())
-        size = "320x320"
+        size = "{}x{}".format(SETTINGS.width, SETTINGS.height)
 
         payload = {
             "location": location,
@@ -32,7 +32,7 @@ def run():
         if hd == SETTINGS.empty_photo:
             continue
 
-        print(hd)
+        print(hd)  # print hashes
 
         with open(
             os.path.join(

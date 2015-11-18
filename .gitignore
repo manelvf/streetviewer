@@ -6,3 +6,4 @@
 settings.py
 *.pyc
 __pycache__
+static/photos/*.jpg
